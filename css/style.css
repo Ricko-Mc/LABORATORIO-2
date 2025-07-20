@@ -1,0 +1,177 @@
+/*Etiqueta para dar un formato general a todos los elementos*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*Es una propiedad que permite que se genere un bloque o caja por cada elemento*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    color: #f9f9f9;
+    background-color: #004080;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #0066cc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+}
+
+/*Elemento de la lista de navegacion el cual representa la pagina actual*/
+#focus {
+    background-color: #004080;
+}
+
+.container-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.asidebar {
+    max-height: 200px;
+    min-width: 200px;
+    flex: 1;
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.asidebar li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.asidebar li a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+
+.asidebar li a:hover {
+    color: white;
+    background-color: #004080;
+}
+
+.contenido {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenido i{
+    font-weight: bold;
+}
+
+.contenido ul{
+    margin: 20px 20px;
+}
+
+#img_principal{
+    display: flex;
+    justify-content: center;
+    margin:20px auto;
+    
+}
+
+#img_principal img{
+    width:350px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px rgba(6, 116, 226, 0.582);
+}
+
+.contenido-articulo {
+    margin: 20px auto;
+    max-width: 1750px;
+}
+
+.contenido-gen {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(10, 143, 143, 0.15);
+}
+
+.contenido-gen ul{
+    margin: 20px 20px;
+}
+
+.cuadro_img{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cuadro_img img{
+    width:250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px rgba(6, 116, 226, 0.582);
+}
+
+.AgrupacionImg{
+    display: flex;
+    gap: 20px;
+}
+
+.AgrupacionImg img{
+    width: 200px;
+    height: 200px;
+
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 20pxp;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
